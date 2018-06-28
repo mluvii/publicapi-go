@@ -17,7 +17,7 @@ import (
 
 	strfmt "github.com/go-openapi/strfmt"
 
-	models "github.com/mluvii/mluvii-api-client/models"
+	models "github.com/mluvii/publicapi-go/models"
 )
 
 // NewAPIV1WebhooksPostParams creates a new APIV1WebhooksPostParams object

@@ -11,9 +11,9 @@ import (
 
 	strfmt "github.com/go-openapi/strfmt"
 
-	"github.com/mluvii/mluvii-api-client/client/sessions"
-	"github.com/mluvii/mluvii-api-client/client/users"
-	"github.com/mluvii/mluvii-api-client/client/webhooks"
+	"github.com/mluvii/publicapi-go/client/sessions"
+	"github.com/mluvii/publicapi-go/client/users"
+	"github.com/mluvii/publicapi-go/client/webhooks"
 )
 
 // Default mluviiapi HTTP client.
