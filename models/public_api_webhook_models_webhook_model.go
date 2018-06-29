@@ -60,7 +60,7 @@ var publicApiWebhookModelsWebhookModelEventTypesItemsEnum []interface{}
 
 func init() {
 	var res []string
-	if err := json.Unmarshal([]byte(`["UserLoggedIn","UserLoggedOut","UserStatusChanged","SessionStarted","SessionEnded","SessionForwarded"]`), &res); err != nil {
+	if err := json.Unmarshal([]byte(`["UserStatusChanged","SessionStarted","SessionEnded","SessionForwarded"]`), &res); err != nil {
 		panic(err)
 	}
 	for _, v := range res {
