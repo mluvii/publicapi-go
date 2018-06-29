@@ -170,13 +170,19 @@ func NewAPIV1WebhooksPostConflict() *APIV1WebhooksPostConflict {
 Conflict
 */
 type APIV1WebhooksPostConflict struct {
+	Payload int32
 }
 
 func (o *APIV1WebhooksPostConflict) Error() string {
-	return fmt.Sprintf("[POST /api/v1/Webhooks][%d] apiV1WebhooksPostConflict ", 409)
+	return fmt.Sprintf("[POST /api/v1/Webhooks][%d] apiV1WebhooksPostConflict  %+v", 409, o.Payload)
 }
 
 func (o *APIV1WebhooksPostConflict) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+
+	// response payload
+	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && err != io.EOF {
+		return err
+	}
 
 	return nil
 }
