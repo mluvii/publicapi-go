@@ -1,6 +1,6 @@
 # publicapi-go
 
-!!! IMPORTANT !!! This is work in progress. No public api is available at the moment.
+Public API for mluvii.
 
 ## Regenerating client code
 
